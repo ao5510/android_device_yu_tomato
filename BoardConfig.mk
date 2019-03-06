@@ -70,9 +70,6 @@ TARGET_RECOVERY_DENSITY := xhdpi
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := ABGR_8888
 
-# SELinux
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
-
 # TWRP
 ifeq ($(WITH_TWRP),true)
 include $(DEVICE_PATH)/twrp.mk
